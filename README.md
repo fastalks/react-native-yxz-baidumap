@@ -1,32 +1,36 @@
-# react-native-baidu-map [![npm version](https://img.shields.io/npm/v/react-native-baidu-map.svg?style=flat)](https://www.npmjs.com/package/react-native-baidu-map)
+# react-native-yxz-baidumap [![npm version](https://img.shields.io/npm/v/react-native-baidu-map.svg?style=flat)](https://www.npmjs.com/package/react-native-yxz-baidumap)
 
-Baidu Map SDK modules and view for React Native(Android & IOS), support react native 0.30+
+Baidu Map SDK modules and view for React Native(Android & IOS), support react native 0.40+
 
-百度地图 React Native 模块，支持 react native 0.30+
+百度地图 React Native 模块，支持 react native 0.40+
 
-![Android](https://raw.githubusercontent.com/lovebing/react-native-baidu-map/master/images/android.jpg)
-![IOS](https://raw.githubusercontent.com/lovebing/react-native-baidu-map/master/images/ios.jpg)
+借鉴的https://github.com/lovebing/react-native-baidu-map ，总是不更新，就自己重新封装了一下
+
+![Android](https://raw.githubusercontent.com/wangfaguo/react-native-yxz-baidumap/master/images/android.jpg)
+![IOS](https://raw.githubusercontent.com/wangfaguo/react-native-yxz-baidumap/master/images/ios.jpg)
 
 ### Install 安装
-    npm install react-native-baidu-map --save
+    npm install react-native-yxz-baidumap --save
+    or
+    yarn add react-native-yxz-baidumap
 ### Import 导入
 
 #### Android Studio
 - settings.gradle `
-include ':react-native-baidu-map'
-project(':react-native-baidu-map').projectDir = new File(settingsDir, '../node_modules/react-native-baidu-map/android')`
+include ':react-native-yxz-baidumap'
+project(':react-native-yxz-baidumap').projectDir = new File(settingsDir, '../node_modules/react-native-yxz-baidumap/android')`
 
-- build.gradle `compile project(':react-native-baidu-map')`
+- build.gradle `compile project(':react-native-yxz-baidumap')`
 
 - MainApplication`new BaiduMapPackage(getApplicationContext())`
 - AndroidMainifest.xml `<meta-data
             android:name="com.baidu.lbsapi.API_KEY" android:value="xx"/>`
 
 #### Xcode
-- Project navigator->Libraries->Add Files to 选择 react-native-baidu-map/ios/RCTBaiduMap.xcodeproj
-- Project navigator->Build Phases->Link Binary With Libraries 加入 libRCTBaiduMap.a
-- Project navigator->Build Settings->Search Paths， Framework search paths 添加 react-native-baidu-map/ios/lib，Header search paths 添加 react-native-baidu-map/ios/RCTBaiduMap
-- 添加依赖, react-native-baidu-map/ios/lib 下的全部 framwordk， CoreLocation.framework和QuartzCore.framework、OpenGLES.framework、SystemConfiguration.framework、CoreGraphics.framework、Security.framework、libsqlite3.0.tbd（xcode7以前为 libsqlite3.0.dylib）、CoreTelephony.framework 、libstdc++.6.0.9.tbd（xcode7以前为libstdc++.6.0.9.dylib）
+- Project navigator->Libraries->Add Files to 选择 react-native-yxz-baidumap/ios/RNBaiduMap.xcodeproj
+- Project navigator->Build Phases->Link Binary With Libraries 加入 libRNBaiduMap.a
+- Project navigator->Build Settings->Search Paths， Framework search paths 添加 react-native-baidu-map/ios/lib，Header search paths 添加 react-native-yxz-baidumap/ios/RNBaiduMap
+- 添加依赖, react-native-yxz-baidumap/ios/lib 下的全部 framwordk， CoreLocation.framework和QuartzCore.framework、OpenGLES.framework、SystemConfiguration.framework、CoreGraphics.framework、Security.framework、libsqlite3.0.tbd（xcode7以前为 libsqlite3.0.dylib）、CoreTelephony.framework 、libstdc++.6.0.9.tbd（xcode7以前为libstdc++.6.0.9.dylib）
 - 添加 BaiduMapAPI_Map.framework/Resources/mapapi.bundle
 
 - 其它一些注意事项可参考百度地图LBS文档
