@@ -17,10 +17,10 @@ Baidu Map SDK modules and view for React Native(Android & IOS), support react na
 
 #### Android Studio
 - settings.gradle `
-include ':react-native-baidu-map'
-project(':react-native-baidu-map').projectDir = new File(settingsDir, '../node_modules/react-native-baidu-map/android')`
+include ':react-native-yxz-baidumap'
+project(':react-native-yxz-baidumap').projectDir = new File(settingsDir, '../node_modules/react-native-yxz-baidumap/android')`
 
-- build.gradle `compile project(':react-native-baidu-map')`
+- build.gradle `compile project(':react-native-yxz-baidumap')`
 
 - MainApplication`new BaiduMapPackage(getApplicationContext())`
 - AndroidMainifest.xml `<meta-data
