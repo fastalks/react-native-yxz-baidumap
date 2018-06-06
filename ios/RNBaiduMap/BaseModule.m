@@ -18,11 +18,7 @@
 }
 
 -(void)sendEvent:(NSString *)name body:(NSMutableDictionary *)body {
-//    [self sendEventWithName:name body:body];
-[self.bridge.eventDispatcher sendDeviceEventWithName:name body:body];
+    [self.bridge.eventDispatcher sendDeviceEventWithName:name body:body];
 }
 
-//-(NSArray<NSString *> *)supportedEvents{
-//    return @[];
-//}
 @end

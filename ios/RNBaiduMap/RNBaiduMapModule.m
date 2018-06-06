@@ -16,7 +16,4 @@
 
 RCT_EXPORT_MODULE();
 
-//- (NSArray<NSString *> *)supportedEvents{
-//    return @[];
-//}
 @end

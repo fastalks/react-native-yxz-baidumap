@@ -200,7 +200,4 @@ RCT_EXPORT_METHOD(reverseGeoCodeGPS:(double)lat lng:(double)lng) {
     return baiduCoor;
 }
 
-//-(NSArray<NSString *> *)supportedEvents{
-//    return @[@"onGetReverseGeoCodeResult",@"onGetGeoCodeResult"];
-//}
 @end
